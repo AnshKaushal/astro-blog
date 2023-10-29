@@ -1,0 +1,78 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>&lt;Blog By Ansh/&gt;</h1>
+      <hr class="border mb-2" />
+      <div class="flex flex-row items-center">
+        <img
+          src="/blog-placeholder-index.jpg"
+          alt="nice"
+          width="56px"
+          class="rounded-full"
+        />
+        <div class="flex flex-col ml-2">
+          <p class="mb-0 pb-0 ml-2">Ansh Kaushal</p>
+          <a href="https://instagram.com/anshhkaushal" target="_blank"
+            >@Anshhkaushal</a
+          >
+        </div>
+      </div>
+      <hr class="border my-2" />
+      <p>
+        Being a developer and not having a blog is like having a <span
+          class="font-bold">powerful engine</span
+        >
+         without a road to drive on. A blog not only showcases your <span
+          class="underline">coding expertise</span
+        > but also <span class="text-yellow-500">connects</span> you with the
+        coding community, helping you
+        <span class="text-yellow-500">grow and learn</span> from others. It's a
+        valuable platform for sharing your knowledge and passion for coding and
+        making meaningful connections.
+      </p>
+      <p>
+        Welcome to a <span class="text-yellow-500">space</span> where coding
+        meets real life! Here, we're not just diving deep into the world of code
+        - though there will be some of that - but we'll also have a chat about
+        the <span class="text-yellow-500">not-so-geeky</span> parts of life.
+        Whether you're a <span class="font-bold">fellow</span> developer looking
+        for some coding tips or just someone curious about what happens <span
+          class="text-yellow-500">behind the screen</span
+        >, you're in the right place. We'll explore the exciting world of
+        programming, share a laugh about everyday adventures, and get to know
+        each other a bit better.
+      </p>
+      <p>
+        This is a space where college life, assignments, and exams <span
+          class="underline">mix</span
+        > with a bit of a social life on the side. So, expect some fun stories
+        from <span class="text-yellow-500">campus life</span>. We'll discuss how
+        to write clean, efficient code that gets the job done without
+        unnecessary jargon. But this isn't just a technical space; it's a place
+        where I'll open up about what <span class="text-yellow-500"
+          >makes me tick</span
+        > and what keeps me inspired. Together, we'll bridge the gap between
+        coding and everyday experiences. So, grab your virtual coffee, and let's
+
+
+        <span class="underline">embark</span> on this exciting journey where the
+        lines between code, life, and everything in between start to <a
+          href="/blog">blur</a
+        >.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

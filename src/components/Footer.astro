@@ -1,0 +1,60 @@
+---
+const today = new Date()
+---
+
+<footer>
+  &copy; {today.getFullYear()} Ansh Kaushal. All rights reserved.
+  <div class="social-links">
+    <a href="https://youtube.com/@anshhkaushal" target="_blank">
+      <span class="sr-only">Subscribe to Ansh on youtube</span>
+      <img
+        src="https://www.svgrepo.com/show/475700/youtube-color.svg"
+        alt="youtube"
+        width="32px"
+        height="32px"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/ansh-kaushal-8196a424a/"
+      target="_blank"
+    >
+      <span class="sr-only">Follow Ansh on Linkedin</span>
+      <img
+        src="https://www.svgrepo.com/show/448234/linkedin.svg"
+        alt="linkedin"
+        width="32px"
+        height="32px"
+      />
+    </a>
+    <a href="https://github.com/AnshKaushal" target="_blank">
+      <span class="sr-only">Go to Ansh's GitHub page</span>
+      <img
+        src="https://www.svgrepo.com/show/512317/github-142.svg"
+        alt="linkedin"
+        width="32px"
+        height="32px"
+      />
+    </a>
+  </div>
+</footer>
+<style>
+  footer {
+    padding: 2em 1em 6em 1em;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray));
+    text-align: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(var(--gray));
+  }
+  .social-links a:hover {
+    color: rgb(var(--gray-dark));
+  }
+</style>
