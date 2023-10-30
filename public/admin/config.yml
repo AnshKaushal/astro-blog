@@ -10,13 +10,13 @@ public_folder: "/"
 collections:
   - name: "blog" 
     label: "Blog" 
-    folder: "src/pages/blog" 
+    folder: "src/content/blog" 
     create: true 
     slug: "{{slug}}" 
     fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/BlogPost.astro"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Publish Date", name: "publishDate", widget: "datetime"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
       - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
